@@ -1,0 +1,29 @@
+  .kontakt {
+      display: flex;
+      margin-left: auto;
+
+     &__menu:last-child {
+            margin-right: 0px;
+     }
+  }
+
+  .kontakt__link {
+      margin-right: 40px;
+      color: #757575;
+      fill: #757575;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+
+      text-decoration: none;
+
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+         color: var(--hover-color);
+         fill: var(--hover-color);
+     }
+  }
+
+ 

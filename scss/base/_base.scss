@@ -1,0 +1,22 @@
+header {
+    background: var(--header-background);
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+}
+
+footer {
+    background: var(--footer-background);
+    text-decoration: none;
+    font-style: normal;
+
+    display: flex;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+

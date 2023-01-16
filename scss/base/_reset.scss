@@ -1,0 +1,20 @@
+span {
+    color: var(--hover-color);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}

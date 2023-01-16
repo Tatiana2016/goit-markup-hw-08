@@ -1,0 +1,39 @@
+/*footer*/
+.footer-page__container {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.footer-page__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    display: block
+}
+.address__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
+    font-style: normal;
+
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.address__nav:first-child {
+    margin-bottom: 12px;
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+}

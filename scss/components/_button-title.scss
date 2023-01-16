@@ -1,0 +1,27 @@
+.button-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--header-background);
+    background: var(--hover-color);
+    border: 0px;
+    border-color: var(--hover-color);
+
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+
+    width: 200px;
+    height: 50px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover,
+ &:active {
+        background: #188CE8;
+        cursor: pointer;
+    }
+}
+
