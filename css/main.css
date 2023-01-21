@@ -64,10 +64,24 @@ p {
 
 /*Layout*/
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /*footer*/
@@ -117,7 +131,7 @@ p {
 
 /*modal*/
 .modal {
-  width: 538.56px;
+  width: 528px;
   height: 581px;
   background: #FFFFFF;
   padding: 40px;
@@ -814,7 +828,6 @@ textarea {
 }
 
 .promo {
-  height: 600px;
   max-width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
@@ -826,6 +839,21 @@ textarea {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .promo__section {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .promo__section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promo__section {
+    width: 1200px;
+  }
 }
 .promo__title {
   font-family: "Roboto", sans-serif;
@@ -1018,22 +1046,54 @@ textarea {
   background-color: var(--hover-color);
 }
 
-.menu-subject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .menu-subject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
+
 .menu-subject__lead {
-  width: 270px;
-  margin: 0 30px 0 0;
+  width: 450px;
 }
-.menu-subject__lead:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .menu-subject__lead {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 30px/2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-subject__lead {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+.specifics {
+  margin: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .specifics {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics:not(:first-child) {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 .specifics__box {
-  width: 270px;
-  height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -1044,7 +1104,17 @@ textarea {
   margin: auto;
   height: 100%;
   width: 100%;
-  padding: 25px 100px;
+  padding: 25px 190px;
+}
+@media screen and (min-width: 768px) {
+  .specifics__icons {
+    padding: 25px 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics__icons {
+    padding: 25px 100px;
+  }
 }
 
 .specifics__title {
