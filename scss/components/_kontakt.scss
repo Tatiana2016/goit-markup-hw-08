@@ -1,11 +1,17 @@
   .kontakt {
-      display: flex;
+      display: none; 
       margin-left: auto;
 
      &__menu:last-child {
             margin-right: 0px;
      }
-  }
+     @media screen and (min-width:768px) {
+        display: block;
+     }
+     @media screen and (min-width:1200px) {
+      display: flex;
+     }
+    }
 
   .kontakt__link {
       margin-right: 40px;

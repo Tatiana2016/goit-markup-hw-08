@@ -1,0 +1,119 @@
+.mobile-menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-background);
+    padding-left: 40px;
+
+    transform:translateX(100%) ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+     transform: translateX(0);
+    }
+    &__close{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    &__container{
+        position: absolute;
+        top:48px;
+        bottom:48px;
+    }
+    &__list{
+        margin-bottom: 305px;
+    }
+    &__tel{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.8;
+                
+        letter-spacing: 0.02em;
+        
+        color: #2196F3;
+    }  
+    &__email{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        
+        color: #757575;
+
+    } 
+    &__kontakt{
+        margin-bottom: 64px;
+    }
+    &__social{
+        display:inline-flex;  
+       
+    }
+    
+    
+}
+.mobile-menu__link {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:last-child {        
+        border:none;
+    }
+
+}
+
+.mobile-menu__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        cursor: pointer;
+    }
+    
+}
+
+.button-icons {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+
+    background: #FFFFFF;
+    border: none;    
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        cursor: pointer;
+    }
+ }
+
+    

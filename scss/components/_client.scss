@@ -9,12 +9,13 @@
 
 .customers__menu {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;    
     gap: 30px;
+    
 }
 
-.client__link {
-    width: 170px;
+.client__link { 
+    width: 210px;
     height: 92px;
 
     box-sizing: border-box;
@@ -35,5 +36,14 @@
     
      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
+    @media screen and (min-width:768px) { 
+        width: 226px; 
+        flex-basis: calc((100% - 30px)/3);
+    }
+    @media screen and (min-width:1200px) {
+        width: 170px;
+        flex-basis: calc((100% - 150px)/6);
+    }
+      
 }
 
