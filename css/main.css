@@ -86,26 +86,74 @@ p {
 
 /*footer*/
 .footer-page__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 604px;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-page__container {
+    height: 464px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-page__container {
+    height: 256px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-page__kontakt {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-page__kontakt {
+    text-align: left;
+  }
 }
 
 .footer-page__logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 26px;
+  line-height: 1.16;
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer-page__logo {
+    font-size: 24px;
+    line-height: 1.19;
+  }
 }
 
 .address__text {
@@ -131,8 +179,8 @@ p {
 
 /*modal*/
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #FFFFFF;
   padding: 40px;
   position: relative;
@@ -143,6 +191,12 @@ p {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__close {
   position: absolute;
@@ -157,6 +211,11 @@ p {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 .modal__form-field {
   margin-bottom: 10px;
@@ -195,19 +254,30 @@ p {
 
 /*form*/
 .form {
-  width: 448px;
+  width: 370px;
   height: 342px;
   position: absolute;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
+    height: 342px;
+  }
 }
 
 .form-field__label {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.66;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .form-field__label {
+    line-height: 1.66;
+  }
 }
 
 .form-field__control {
@@ -595,12 +665,18 @@ textarea {
 }
 
 .checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   padding-left: 15px;
   letter-spacing: 0.03em;
   position: relative;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__label a {
   -webkit-text-decoration-line: underline;
@@ -787,9 +863,16 @@ textarea {
 }
 
 .menu-photo {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu-photo__comment {
   padding-top: 30px;
@@ -809,17 +892,30 @@ textarea {
   color: #757575;
   margin-bottom: 0px;
 }
+.menu-photo__img {
+  width: 100%;
+}
 
 .menu-photo__list {
+  width: 450px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
-  margin-right: 30px;
 }
-.menu-photo__list:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .menu-photo__list {
+    width: 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-photo__list {
+    width: 270px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .mobile-menu {
@@ -893,6 +989,9 @@ textarea {
   padding-left: 10px;
   padding-right: 10px;
 }
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  text-decoration: underline;
+}
 .mobile-menu__link:last-child {
   border: none;
 }
@@ -909,6 +1008,7 @@ textarea {
 .mobile-menu__item:hover, .mobile-menu__item:focus {
   color: #2196F3;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .button-icons {
@@ -1031,11 +1131,25 @@ textarea {
 }
 
 .registration {
-  width: 570px;
+  width: 450px;
   height: 86px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .registration {
+    margin: 60px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .registration {
+    width: 570px;
+  }
 }
 .registration__name {
   font-family: "Roboto";
@@ -1045,15 +1159,26 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .registration__name {
+    text-align: left;
+  }
 }
 
-.input-field {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+@media screen and (min-width: 1200px) {
+  .input-field {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 .input-field__email {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: #2F303A;
   padding-left: 16px;
@@ -1074,6 +1199,11 @@ textarea {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .input-field__email {
+    width: 358px;
+  }
+}
 .input-field__submit {
   position: relative;
   width: 200px;
@@ -1083,8 +1213,14 @@ textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: #2196F3;
-  margin-left: 12px;
+  margin-top: 20px;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .input-field__submit {
+    margin-top: 0px;
+    margin-left: 12px;
+  }
 }
 .input-field__text {
   position: absolute;
@@ -1097,7 +1233,7 @@ textarea {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  Width: 110px;
+  width: 110px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1115,8 +1251,22 @@ textarea {
 }
 
 .social-box {
-  margin-left: 70px;
-  margin-right: 93px;
+  width: 206px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px auto;
+}
+@media screen and (min-width: 1200px) {
+  .social-box {
+    margin-left: 70px;
+    margin-right: 93px;
+    text-align: left;
+  }
 }
 .social-box__text {
   margin-bottom: 20px;

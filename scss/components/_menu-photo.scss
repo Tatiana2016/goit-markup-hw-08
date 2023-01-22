@@ -1,5 +1,9 @@
 .menu-photo {
+    text-align: center;
+    justify-content: center;
     display: flex;
+    gap: 30px;
+    flex-wrap: wrap;  
 
     &__comment {
      padding-top: 30px;
@@ -22,18 +26,26 @@
      color: #757575;
     
      margin-bottom: 0px;
+  }
+    &__img {
+      width: 100%;
     }
 }
 
 .menu-photo__list {
+    width: 450px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
+  @media screen and (min-width:768px) {
+    width: 354px;
+    flex-basis:calc((100% - 30px)/2);
+  } 
 
-    padding-bottom: 30px;
-    margin-right: 30px;
+  @media screen and (min-width:1200px) {
+    width: 270px;
+    flex-basis: calc((100% - 90px)/4);
+  }
 
-    &:last-child {
-      margin-right: 0px;
-    }
 }

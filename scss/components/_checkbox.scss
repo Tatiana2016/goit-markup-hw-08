@@ -28,12 +28,17 @@
 }
 
 .checkbox__label {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     padding-left: 15px;
     letter-spacing: 0.03em;
     position: relative;
     color: #757575;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
     & a {
      text-decoration-line: underline;

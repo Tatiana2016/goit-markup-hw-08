@@ -1,6 +1,16 @@
 .social-box {
-    margin-left: 70px;
-    margin-right: 93px;
+     width: 206px;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     margin: 60px auto;
+    
+
+    @media screen and (min-width:1200px){
+      margin-left: 70px;
+      margin-right: 93px;
+      text-align: left;
+    }
 
     &__text {
       margin-bottom: 20px;
