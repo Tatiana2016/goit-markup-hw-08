@@ -1317,6 +1317,15 @@ textarea {
   background-color: var(--hover-color);
 }
 
+.social-icon {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .social-icon {
+    margin-bottom: 30px;
+  }
+}
+
 .social-icon__menu {
   display: -webkit-box;
   display: -ms-flexbox;
