@@ -20,11 +20,11 @@ body {
 header {
   background: var(--header-background);
   border-bottom: 1px solid #ECECEC;
-  height: 80px;
+  height: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   header {
-    height: 60px;
+    height: 80px;
   }
 }
 
@@ -416,11 +416,6 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-widt: 1200px) {
-  .header__container {
-    height: 80px;
-  }
 }
 
 .header__burger {
