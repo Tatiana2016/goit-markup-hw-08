@@ -26,12 +26,12 @@
         position: absolute;
         top:48px;
         bottom:48px;
+        display: flex;
+        flex-direction: column;
     }
     &__list{
-        margin-bottom: 306px;
-        @media screen and (max-width:479px) {
-        margin-bottom: 190px;
-        }
+        margin-bottom: auto;
+       
     }
     &__tel{
         font-family: 'Roboto';
