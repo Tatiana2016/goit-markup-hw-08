@@ -29,6 +29,9 @@
     }
     &__list{
         margin-bottom: 306px;
+        @media screen and (max-width:479px) {
+        margin-bottom: 190px;
+        }
     }
     &__tel{
         font-family: 'Roboto';
@@ -59,8 +62,7 @@
         display:inline-flex;  
        
     }
-    
-    
+        
 }
 .mobile-menu__link {
 
