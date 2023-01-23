@@ -5,6 +5,7 @@
     left: 0px;
     top: -2px;
     background: rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;    
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
