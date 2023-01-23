@@ -2,6 +2,9 @@ header {
     background: var(--header-background);
     border-bottom: 1px solid #ECECEC;
     height: 80px;
+    @media screen and (max-width:767px) {
+        height: 60px;
+    }
 }
 
 footer {

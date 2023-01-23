@@ -1,11 +1,15 @@
 .mobile-menu{
-    position: fixed;
+    
+    position:fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     background-color: var(--header-background);
+    background-size: cover;
     padding-left: 40px;
+    margin-bottom: auto;
+    overflow: hidden;
 
     transform:translateX(100%) ;
     transition-duration: 250ms;
@@ -25,7 +29,7 @@
         bottom:48px;
     }
     &__list{
-        margin-bottom: 305px;
+        margin-bottom: 306px;
     }
     &__tel{
         font-family: 'Roboto';
