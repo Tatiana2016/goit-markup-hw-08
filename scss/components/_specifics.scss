@@ -6,7 +6,7 @@
     }
 }
 .menu-subject__lead { 
-    @media screen and (min-width:480px){
+    @media screen and (max-width:767px){
         margin-bottom: 30px;
     }
 
@@ -45,7 +45,7 @@
      
     margin: 0 0 10px;
     
-    @media screen and (max-width:479px){
+    @media screen and (max-width:767px){
         text-align: center;
     }    
 }
