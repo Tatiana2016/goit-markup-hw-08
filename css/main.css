@@ -809,13 +809,19 @@ textarea {
   color: #757575;
   fill: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   text-decoration: none;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .kontakt__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .kontakt__link:hover, .kontakt__link:focus {
   color: var(--hover-color);
