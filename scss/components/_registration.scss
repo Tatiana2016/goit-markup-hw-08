@@ -1,6 +1,6 @@
 .registration {
     width: 450px;
-    height: 86px;
+    height: 156px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -11,6 +11,7 @@
 
     @media screen and (min-width:1200px) {
         width: 570px;
+        height: 86px;
     }
 
  &__name {
